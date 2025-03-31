@@ -1,16 +1,63 @@
 <!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+        .card {
+            width: 300px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            text-align: center;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h1 {
+            font-size: 24px;
+            margin: 15px 0;
+        }
+        .card p {
+            font-size: 16px;
+            color: #555;
+        }
+        .card .price {
+            font-size: 20px;
+            font-weight: bold;
+            color: #000;
+        }
+        .card button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin-top: 10px;
+        }
+        .card button:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+    <div class="card">
+        <img src="https://via.placeholder.com/300" alt="Product Image">
+        <h1>Product Title</h1>
+        <p class="price">$99.99</p>
+        <p>Brief description of the product goes here. It highlights key features and benefits.</p>
+        <button>Buy Now</button>
+    </div>
+    <script type="text/javascript" src="./script.js"></script>
 </body>
-
 </html>
